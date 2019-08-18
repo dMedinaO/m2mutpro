@@ -13,65 +13,71 @@
 
 
   <!--Bootstrap Stylesheet [ REQUIRED ]-->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 
   <!--Nifty Stylesheet [ REQUIRED ]-->
-  <link href="css/nifty.min.css" rel="stylesheet">
+  <link href="../css/nifty.min.css" rel="stylesheet">
 
 
   <!--Nifty Premium Icon [ DEMONSTRATION ]-->
-  <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+  <link href="../css/demo/nifty-demo-icons.min.css" rel="stylesheet">
 
 
   <!--DataTables [ OPTIONAL ]-->
-  <link href="plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
-  <link href="plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="../plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
+  <link href="../plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
   <!--Bootstrap Validator [ OPTIONAL ]-->
-  <link href="plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
+  <link href="../plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
   <!--JAVASCRIPT-->
   <!--=================================================-->
 
   <!--Pace - Page Load Progress Par [OPTIONAL]-->
-  <link href="plugins/pace/pace.min.css" rel="stylesheet">
-  <script src="plugins/pace/pace.min.js"></script>
+  <link href="../plugins/pace/pace.min.css" rel="stylesheet">
+  <script src="../plugins/pace/pace.min.js"></script>
 
 
   <!--jQuery [ REQUIRED ]-->
-  <script src="js/jquery.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
 
 
   <!--BootstrapJS [ RECOMMENDED ]-->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 
 
   <!--NiftyJS [ RECOMMENDED ]-->
-  <script src="js/nifty.min.js"></script>
+  <script src="../js/nifty.min.js"></script>
 
-  <!--Dropzone [ OPTIONAL ]-->
-  <script src="plugins/dropzone/dropzone.min.js"></script>
-  <link href="plugins/dropzone/dropzone.min.css" rel="stylesheet">
-  <script src="js/formatDropzone.js"></script>
 
   <!--=================================================-->
 
   <!--Font Awesome [ OPTIONAL ]-->
-  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!--Ion Icons [ OPTIONAL ]-->
-  <link href="plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+  <link href="../plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
   <!--Ion Icons [ OPTIONAL ]-->
-  <link href="plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
   <!--Themify Icons [ OPTIONAL ]-->
-  <link href="plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
+  <link href="../plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
   <!--Premium Line Icons [ OPTIONAL ]-->
-  <link href="premium/icon-sets/icons/line-icons/premium-line-icons.min.css" rel="stylesheet">
-  <link href="plugins/spinkit/css/spinkit.min.css" rel="stylesheet">
-  <script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+  <link href="../premium/icon-sets/icons/line-icons/premium-line-icons.min.css" rel="stylesheet">
+  <link href="../plugins/spinkit/css/spinkit.min.css" rel="stylesheet">
+  <script src="../plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
 
+  <!--DataTables [ OPTIONAL ]-->
+  <link href="../plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
+  <link href="../plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
-  <!-- script para la carga de datos -->
-  <script src="js/jobs/createJob.js"></script>
+  <!--DataTables [ OPTIONAL ]-->
+  <script src="../plugins/datatables/media/js/jquery.dataTables.js"></script>
+  <script src="../plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+  <script src="../plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../js/jobs/loadResponseView.js"></script>
+  <script src="../js/jobs/summaryJob.js"></script>
+
 </head>
 
 <!--TIPS-->
@@ -88,7 +94,7 @@
                 <!--================================-->
                 <div class="navbar-header">
                     <a href="" class="navbar-brand">
-                        <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
+                        <img src="../img/logo.png" alt="Nifty Logo" class="brand-icon">
                         <div class="brand-title">
                             <span class="brand-text">M2MutPro</span>
                         </div>
@@ -142,130 +148,124 @@
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
+                  <div class="row">
+                    <div class="panel">
+                      <div class="panel-body">
+                          <div class="fixed-fluid">
+                              <div class="fixed-md-250 pull-sm-left fixed-right-border">
+
+                                  <!-- Simple profile -->
+                                  <div class="text-center">
+                                      <div class="pad-ver">
+                                          <img src="../img/profile-photos/11.png" class="img-lg img-circle" alt="Profile Picture">
+                                      </div>
+                                  </div>
+                                  <hr>
+
+                                  <!-- Profile Details -->
+                                  <p class="pad-ver text-main text-sm text-uppercase text-bold">Job's data</p>
+                                  <ul>
+                                    <li>
+                                      <i class="fa fa fa-anchor icon-lg icon-fw"></i>
+                                      <span class="menu-title jobID"></span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                      <i class="fa fa fa-code icon-lg icon-fw"></i>
+                                      <span class="menu-title nameJob"></span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                      <i class="fa fa fa-calendar icon-lg icon-fw"></i>
+                                      <span class="menu-title startDate"></span>
+                                    </li>
+
+                                    <br>
+                                    <li>
+                                      <i class="fa fa fa-balance-scale icon-lg icon-fw"></i>
+                                      <span class="menu-title kindModel"></span>
+                                    </li>
+
+                                    <br>
+                                    <li>
+                                      <i class="fa fa fa-pie-chart icon-lg icon-fw"></i>
+                                      <span class="menu-title examples"></span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                      <i class="fa fa fa-file icon-lg icon-fw"></i>
+                                      <span class="menu-title response"></span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                      <i class="fa fa fa-envelope icon-lg icon-fw"></i>
+                                      <span class="menu-title notification"></span>
+                                    </li>
+                                  </ul>
+
+                                  <hr>
+                              </div>
+                              <div class="fluid">
+
+                                <div class="panel">
+                                  <div class="panel-title">
+                                      View Response Distribution
+                                  </div>
+
+                                  <div class="panel-body">
+                                    <div id="detailResponse">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                    </div>
+                  </div>
 
                   <div class="row">
-
                     <div class="col-sm-12 col-md-12">
 
                       <div class="panel panel-bordered panel-primary">
 
                         <div class="panel-heading">
                           <h3 class="panel-title">
-                            Submmit a csv file
+                            Important information
                           </h3>
                         </div>
                         <div class="panel-body">
-                          <form id="frmAgregarFile" action="php/uploadFile.php" class="dropzone" >
-                            <div class="dz-default dz-message">
-                              <div class="dz-icon">
-                                <i class="demo-pli-upload-to-cloud icon-5x"></i>
-                              </div>
-                              <div>
-                                <span class="dz-text">Drop files to upload</span>
-                                <p class="text-sm text-muted">or click to pick manually</p>
-                              </div>
-                            </div>
-                            <div class="fallback">
-                              <input name="file" type="file" multiple>
-                            </div>
-
-                          </form>
-
-                          <hr>
-
-                          <form id="initNewJob" method="post" class="form-horizontal form-label-left">
-
-                            <div class="form-group">
-                               <label class="col-sm-3 control-label">Email*</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="email" name="email" />
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                               <label class="col-sm-3 control-label">Name Job*</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="nameJob" name="nameJob" />
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                               <label class="col-sm-3 control-label">PDB Code*</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="pdbCode" name="pdbCode" />
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="optionProcess">Select Option Job <span class="required">*</span>
-                              </label>
-
-                              <div class="col-md-5 col-sm-5 col-xs-12">
-                                <select id="optionProcess" class="form-control">
-                                  <option value="1">Classification</option>
-                                  <option value="2">Regression</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <div class="ln_solid"></div>
-
-                            <div class="form-group">
-                                <div class="col-sm-5 col-sm-offset-3">
-                                  <button type="submit" id="processJob" class="btn btn-primary">Create Job</button>
-                                </div>
-                            </div>
-                          </form>
-
-                          <div class="col-sm-12 col-md-12 col-lg-12" id="loading" style="display:none;">
-                              <div class="panel">
-                                  <div class="panel-body">
-                                      <div class="sk-three-bounce">
-                                          <div class="sk-child sk-bounce1"></div>
-                                          <div class="sk-child sk-bounce2"></div>
-                                          <div class="sk-child sk-bounce3"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-sm-12 col-md-12 col-lg-12" id="errorResponse" style="display:none;">
-                            <div class="alert alert-danger" role="alert">
-                              <p class="messageError"></p>
-                            </div>
-                          </div>
-
-                          <div class="col-sm-12 col-md-12 col-lg-12" id="okResponse" style="display:none;">
-                            <div class="alert alert-success" role="alert">
-                              <p class="messageOK"></p>
-                            </div>
-                          </div>
-
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 col-md-12">
-
-                    <div class="panel panel-bordered panel-primary">
-
-                      <div class="panel-heading">
-                        <h3 class="panel-title">
-                          Important information
-                        </h3>
-                      </div>
-                      <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
 
-
+            <div>
+              <form id="frmEliminar" action="" method="POST">
+                <!-- Modal -->
+                <div class="modal fade" id="myModalCancel" tabindex="-1" role="dialog" aria-labelledby="modalEliminarLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalEliminarLabel">Cancel Job</h4>
+                      </div>
+                      <div class="modal-body">
+                        Are you sure to cancel the job?<strong data-name=""></strong>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" id="cancel-Job" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </form>
+            </div>
 
             <!--MAIN NAVIGATION-->
             <!--===================================================-->
@@ -283,7 +283,7 @@
                                 <div id="mainnav-profile" class="mainnav-profile">
                                     <div class="profile-wrap text-center">
                                         <div class="pad-btm">
-                                            <img class="img-circle img-md" src="img/profile-photos/11.png" alt="Profile Picture">
+                                            <img class="img-circle img-md" src="../img/profile-photos/11.png" alt="Profile Picture">
                                         </div>
 
                                         <p class="mnp-name">
@@ -297,7 +297,7 @@
                                   <li class="list-header">Dashboard</li>
 
                                   <li>
-          						                <a href="query/">
+          						                <a href="../query/">
           						                    <i class="fa fa fa-list"></i>
           						                    <span class="menu-title">Query Job</span><i class="arrow"></i>
           						                </a>
@@ -305,7 +305,7 @@
           						            </li>
 
                                   <li>
-          						                <a href="dataSet/">
+          						                <a href="../dataSet/">
           						                    <i class="fa fa fa-archive"></i>
           						                    <span class="menu-title">Data Sets Demo</span><i class="arrow"></i>
           						                </a>
@@ -313,7 +313,7 @@
           						            </li>
 
                                   <li>
-          						                <a href="about">
+          						                <a href="../about">
           						                    <i class="fa fa fa-users"></i>
           						                    <span class="menu-title">About Us</span><i class="arrow"></i>
           						                </a>
@@ -321,7 +321,7 @@
           						            </li>
 
                                   <li>
-          						                <a href="userManual">
+          						                <a href="../userManual">
           						                    <i class="fa fa fa-file"></i>
           						                    <span class="menu-title">How to use</span><i class="arrow"></i>
           						                </a>
@@ -329,7 +329,7 @@
           						            </li>
 
                                   <li>
-          						                <a href="">
+          						                <a href="../">
           						                    <i class="fa fa fa-home"></i>
           						                    <span class="menu-title">Home</span><i class="arrow"></i>
           						                </a>

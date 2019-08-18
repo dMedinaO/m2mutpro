@@ -75,8 +75,7 @@
   <script src="../plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="../js/jobs/loadFrequenceGraphic.js"></script>
-  <script src="../js/jobs/loadResponseView.js"></script>
+  <script src="../js/jobs/loadFrequenceGraphicDetail.js"></script>
   <script src="../js/jobs/processPanel.js"></script>
 
 </head>
@@ -151,52 +150,339 @@
                 <div id="page-content">
 
                 <div class="row">
-                  <div class="col-sm-6 col-md-6">
+                  <div class="col-sm-4 col-md-4">
 
                     <div class="panel panel-bordered panel-primary">
 
                       <div class="panel-heading">
                         <h3 class="panel-title">
-                          <h3 class="panel-title">Frequence residues wild type</h3>
+                          <h3 class="panel-title">Frequence Alanine</h3>
                         </h3>
                       </div>
                       <div class="panel-body">
-                        <div id="frequenceWild">
+                        <div id="frequence1">
 
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-6">
+                  <div class="col-sm-4 col-md-4">
 
                     <div class="panel panel-bordered panel-primary">
 
                       <div class="panel-heading">
                         <h3 class="panel-title">
-                          <h3 class="panel-title">Frequence residues Mutation type</h3>
+                          <h3 class="panel-title">Frequence Arginine</h3>
                         </h3>
                       </div>
                       <div class="panel-body">
-                        <div id="frequenceMut">
+                        <div id="frequence2">
 
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-12">
+                  <div class="col-sm-4 col-md-4">
 
                     <div class="panel panel-bordered panel-primary">
 
                       <div class="panel-heading">
                         <h3 class="panel-title">
-                          <h3 class="panel-title">Detail Response</h3>
+                          <h3 class="panel-title">Frequence Asparagine</h3>
                         </h3>
                       </div>
                       <div class="panel-body">
-                        <div id="detailResponse">
+                        <div id="frequence3">
 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Aspartic acid</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence4">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Cysteine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence5">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Glutamine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence6">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Glutamic acid</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence7">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Glycine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence8">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Histidine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence9">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Isoleucine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence10">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Leucine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence11">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Lysine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence12">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Methionine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence13">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Phenylalanine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence14">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Proline</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence15">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Serine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence16">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Threonine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence17">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Tryptophan</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence18">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Tyrosine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence19">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-bordered panel-primary">
+
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <h3 class="panel-title">Frequence Valine</h3>
+                        </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div id="frequence20">
                         </div>
                       </div>
                     </div>
@@ -214,9 +500,9 @@
                         </h3>
                       </div>
                       <div class="panel-body">
-                        <button type='button' id="viewFre" class='editar btn btn-success'><i class='fa  fa-bar-chart'></i>View Frequence by wilde residue</button>
+                        
                         <button type='button' class='editar btn btn-danger' data-toggle='modal' data-target='#myModalCancel'><i class='fa fa-stop'></i> Cancel Job</button>
-                        <button type='button' id="process" class='btn btn-primary'><i class='fa fa-play'></i>Process Job</button>
+                        <button type='button' id="goStep" class='btn btn-primary'><i class='fa fa-play'></i>Process Job</button>
                       </div>
                     </div>
                   </div>

@@ -1,15 +1,12 @@
 <?php
 
-	#session_start();
-	#$idUSer = $_SESSION['idUser'];
 	$idUSer = "1";
-	#$idUSer = $_SESSION['userName'];
 	$archivo = $_FILES['file'];
 
 	$templocation = $archivo["tmp_name"];
 	$name = $archivo["name"];
 
-	$pathMove = "/var/www/html/MLSTrainingTool/jobs/tmp/".$name;
+	$pathMove = "/var/www/html/m2mutpro/jobs/tmp/".$name;
 
 
 	if(!$templocation){
@@ -22,7 +19,7 @@
 		echo "Error al guardar el archivo";
 	}
 
-	$pathData = "/var/www/html/MLSTrainingTool/jobs/tmp/".$idUSer."_documentQueue.txt";
+	$pathData = "/var/www/html/m2mutpro/jobs/tmp/".$idUSer."_documentQueue.txt";
 	//finalmente escribimos un archivo de texto con el nombre de la imagen...
 	$file = fopen($pathData, "w");
 

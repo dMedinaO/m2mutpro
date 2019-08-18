@@ -16,17 +16,18 @@ $(document).ready(function() {
                 }
             },
 
+            pdbCode: {
+                validators: {
+                    notEmpty: {
+                        message: 'The PDB code is required'
+                    }
+                }
+            },
+
             nameJob: {
                 validators: {
                     notEmpty: {
                         message: 'The nameJob is required'
-                    }
-                }
-            },
-            descJob: {
-                validators: {
-                    notEmpty: {
-                        message: 'The description Job is required'
                     }
                 }
             }
@@ -36,7 +37,7 @@ $(document).ready(function() {
       $('#loading').show();
       var email = $("#initNewJob #email").val();
       var nameJob = $("#initNewJob #nameJob").val();
-      var descJob = $("#initNewJob #descJob").val();
+      var pdbCode = $("#initNewJob #pdbCode").val();
       var optionProcess = $("#initNewJob #optionProcess").val();
 
       $.ajax({
@@ -45,7 +46,7 @@ $(document).ready(function() {
         data: {
           "email"   : email,
           "nameJob"   : nameJob,
-          "descJob"   : descJob,
+          "pdbCode"   : pdbCode,
           "optionProcess"   : optionProcess
 
         }

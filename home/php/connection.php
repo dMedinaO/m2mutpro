@@ -3,7 +3,7 @@
 	$server = "localhost";
 	$user = "root";
 	$password = "123ewq";//poner tu propia contraseña, si tienes una.
-	$bd = "mls_class_db";
+	$bd = "m2mutpro";
 
 	$conexion = mysqli_connect($server, $user, $password, $bd);
 	if (!$conexion){
